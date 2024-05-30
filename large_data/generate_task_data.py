@@ -108,7 +108,7 @@ def generate_random_task(task_id):
     task_type = random.choice(["Type A", "Type B", "Type C"])
     description = "Description task " + str(task_id)
     pre_tasks = random.sample(
-        [num for num in range(1, 251) if num != task_id], 200)
+        [num for num in range(1, 251) if num != task_id], 220)
     # # Duration in hours with steps of 0.25
     # duration = round(random.uniform(1, 72), 2)
     # duration = round(duration * 4) / 4  # Round to the nearest 0.25
